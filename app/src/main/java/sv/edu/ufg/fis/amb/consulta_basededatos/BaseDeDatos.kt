@@ -29,7 +29,7 @@ class BaseDeDatos(context: Context):SQLiteOpenHelper(context, NOMBRE_BD, null, B
         val valores = ContentValues().apply {
             put(MENSAJE,registro.mensaje)
         }
-        base_de_datos.insert(NOMBRE_BD, null, valores)
+        base_de_datos.insert(NOMBRE_TABLA, null, valores)
         base_de_datos.close()
 
     }
